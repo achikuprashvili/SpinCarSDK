@@ -182,7 +182,8 @@ class BackgroundTaskHelper {
     }
 
     func registerBackgroundTask() {
-        task = UIApplication.shared.beginBackgroundTask(expirationHandler: {
+        
+        task = UIApplication().beginBackgroundTask(expirationHandler: {
             self.endBackgroundTask()
         })
         logger!.log("Registering background task id: %@", varargs: [task! as AnyObject])
@@ -193,7 +194,7 @@ class BackgroundTaskHelper {
             return
         }
         logger!.log("Ending background task id: %@", varargs: [task! as AnyObject])
-        UIApplication.shared.endBackgroundTask(task!)
+        UIApplication().endBackgroundTask(task!)
         task = UIBackgroundTaskInvalid
     }
 

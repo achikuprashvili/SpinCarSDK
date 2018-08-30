@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		580D6BD821387216000F4290 /* SpinCarSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 580D6BD721387216000F4290 /* SpinCarSDK.podspec */; };
 		58BBD48221374AD8001699A4 /* SpinCarSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 58BBD48021374AD8001699A4 /* SpinCarSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58BBD48921374B0D001699A4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 58BBD48821374B0D001699A4 /* Podfile */; };
 		58BBD49021374BD9001699A4 /* SDKResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD48B21374BD9001699A4 /* SDKResult.swift */; };
@@ -83,6 +84,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		580D6BD721387216000F4290 /* SpinCarSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SpinCarSDK.podspec; sourceTree = "<group>"; };
 		58BBD47D21374AD8001699A4 /* SpinCarSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpinCarSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58BBD48021374AD8001699A4 /* SpinCarSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpinCarSDK.h; sourceTree = "<group>"; };
 		58BBD48121374AD8001699A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				58BBD5C821379EF4001699A4 /* Mixpanel.framework */,
 				58BBD5C721379EF3001699A4 /* SwipeCellKit.framework */,
 				58BBD48821374B0D001699A4 /* Podfile */,
+				580D6BD721387216000F4290 /* SpinCarSDK.podspec */,
 				58BBD47F21374AD8001699A4 /* SpinCarSDK */,
 				58BBD4B0213765AF001699A4 /* CommonCrypto */,
 				58BBD47E21374AD8001699A4 /* Products */,
@@ -365,7 +368,6 @@
 				58BBD47921374AD8001699A4 /* Frameworks */,
 				58BBD47A21374AD8001699A4 /* Headers */,
 				58BBD47B21374AD8001699A4 /* Resources */,
-				58BBD542213787A7001699A4 /* [CP] Embed Pods Frameworks */,
 				58BBD54B21378AD1001699A4 /* Embed Frameworks */,
 				58BBD5E32137A8B0001699A4 /* ShellScript */,
 			);
@@ -414,6 +416,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580D6BD821387216000F4290 /* SpinCarSDK.podspec in Resources */,
 				58BBD48921374B0D001699A4 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,22 +424,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		58BBD542213787A7001699A4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "
-";
-			showEnvVarsInLog = 0;
-		};
 		58BBD5E32137A8B0001699A4 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -645,7 +632,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B5BFEEA2FF7F326FA9AEFED /* Pods-SpinCarSDK.debug.xcconfig */;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -657,6 +644,7 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = SpinCarSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -676,7 +664,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B3F65C8171954F85BCF0CE8D /* Pods-SpinCarSDK.release.xcconfig */;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
@@ -688,6 +676,7 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = SpinCarSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

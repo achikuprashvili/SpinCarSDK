@@ -55,14 +55,6 @@
 		58BBD4F121376A58001699A4 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4EF21376A58001699A4 /* CoreDataController.swift */; };
 		58BBD57321379292001699A4 /* AccountManager.swift in Headers */ = {isa = PBXBuildFile; fileRef = 58BBD48C21374BD9001699A4 /* AccountManager.swift */; };
 		58BBD574213792A0001699A4 /* UserAccount.swift in Headers */ = {isa = PBXBuildFile; fileRef = 58BBD48F21374BD9001699A4 /* UserAccount.swift */; };
-		58BBD5CF21379F30001699A4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BBD5C921379EF4001699A4 /* Alamofire.framework */; };
-		58BBD5D021379F30001699A4 /* IGListKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BBD5C621379EF3001699A4 /* IGListKit.framework */; };
-		58BBD5D121379F30001699A4 /* Mixpanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BBD5C821379EF4001699A4 /* Mixpanel.framework */; };
-		58BBD5D221379F30001699A4 /* SwipeCellKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BBD5C721379EF3001699A4 /* SwipeCellKit.framework */; };
-		58BBD5D72137A43B001699A4 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58BBD5C921379EF4001699A4 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		58BBD5D82137A43B001699A4 /* IGListKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58BBD5C621379EF3001699A4 /* IGListKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		58BBD5D92137A43B001699A4 /* Mixpanel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58BBD5C821379EF4001699A4 /* Mixpanel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		58BBD5DA2137A43B001699A4 /* SwipeCellKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58BBD5C721379EF3001699A4 /* SwipeCellKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8F75A1BB80DF355CC1B4B47F /* Pods_SpinCarSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CAFBEE4F4A04899A3FF015 /* Pods_SpinCarSDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,10 +65,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				58BBD5D72137A43B001699A4 /* Alamofire.framework in Embed Frameworks */,
-				58BBD5D82137A43B001699A4 /* IGListKit.framework in Embed Frameworks */,
-				58BBD5D92137A43B001699A4 /* Mixpanel.framework in Embed Frameworks */,
-				58BBD5DA2137A43B001699A4 /* SwipeCellKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,10 +121,6 @@
 		58BBD4D8213769BB001699A4 /* UIView+ParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ParentViewController.swift"; sourceTree = "<group>"; };
 		58BBD4EE21376A58001699A4 /* SaveableFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveableFileManager.swift; sourceTree = "<group>"; };
 		58BBD4EF21376A58001699A4 /* CoreDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
-		58BBD5C621379EF3001699A4 /* IGListKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IGListKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/SpinCarSDK-blapnoyrllxjivgvajoweegfszaz/Build/Products/Release-iphoneos/IGListKit/IGListKit.framework"; sourceTree = "<group>"; };
-		58BBD5C721379EF3001699A4 /* SwipeCellKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwipeCellKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/SpinCarSDK-blapnoyrllxjivgvajoweegfszaz/Build/Products/Release-iphoneos/SwipeCellKit/SwipeCellKit.framework"; sourceTree = "<group>"; };
-		58BBD5C821379EF4001699A4 /* Mixpanel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mixpanel.framework; path = "../../../Library/Developer/Xcode/DerivedData/SpinCarSDK-blapnoyrllxjivgvajoweegfszaz/Build/Products/Release-iphoneos/Mixpanel/Mixpanel.framework"; sourceTree = "<group>"; };
-		58BBD5C921379EF4001699A4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/SpinCarSDK-blapnoyrllxjivgvajoweegfszaz/Build/Products/Release-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		5B5BFEEA2FF7F326FA9AEFED /* Pods-SpinCarSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinCarSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpinCarSDK/Pods-SpinCarSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		89CAFBEE4F4A04899A3FF015 /* Pods_SpinCarSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpinCarSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F65C8171954F85BCF0CE8D /* Pods-SpinCarSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinCarSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpinCarSDK/Pods-SpinCarSDK.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,10 +131,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58BBD5CF21379F30001699A4 /* Alamofire.framework in Frameworks */,
-				58BBD5D021379F30001699A4 /* IGListKit.framework in Frameworks */,
-				58BBD5D121379F30001699A4 /* Mixpanel.framework in Frameworks */,
-				58BBD5D221379F30001699A4 /* SwipeCellKit.framework in Frameworks */,
 				58BBD4AF213762A6001699A4 /* libc++.tbd in Frameworks */,
 				8F75A1BB80DF355CC1B4B47F /* Pods_SpinCarSDK.framework in Frameworks */,
 			);
@@ -180,10 +160,6 @@
 		58BBD47321374AD8001699A4 = {
 			isa = PBXGroup;
 			children = (
-				58BBD5C921379EF4001699A4 /* Alamofire.framework */,
-				58BBD5C621379EF3001699A4 /* IGListKit.framework */,
-				58BBD5C821379EF4001699A4 /* Mixpanel.framework */,
-				58BBD5C721379EF3001699A4 /* SwipeCellKit.framework */,
 				58BBD48821374B0D001699A4 /* Podfile */,
 				580D6BD721387216000F4290 /* SpinCarSDK.podspec */,
 				58BBD47F21374AD8001699A4 /* SpinCarSDK */,
@@ -369,7 +345,6 @@
 				58BBD47A21374AD8001699A4 /* Headers */,
 				58BBD47B21374AD8001699A4 /* Resources */,
 				58BBD54B21378AD1001699A4 /* Embed Frameworks */,
-				58BBD5E32137A8B0001699A4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -424,19 +399,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		58BBD5E32137A8B0001699A4 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\nBUNDLE_IN_ROOT=\"$APP_PATH/${FRAMEWORK_EXECUTABLE_NAME}.bundle\"\nif [[ -e \"$FRAMEWORK_EXECUTABLE_PATH\" ]]; then\nFRAMEWORK_MACH_O=\"$(otool -a \"$FRAMEWORK_EXECUTABLE_PATH\" | head -n 1)\"\nFRAMEWORK_FAT_ARCH=\"$(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\"\nelse\nFRAMEWORK_MACH_O=\"NO EXIST\"\nFRAMEWORK_FAT_ARCH=\"NO EXIST\"\nfi\necho \"FRAMEWORK_EXECUTABLE_NAME is $FRAMEWORK_EXECUTABLE_NAME\"\necho \"FRAMEWORK_EXECUTABLE_PATH is $FRAMEWORK_EXECUTABLE_PATH\"\necho \"FRAMEWORK_MACH_O is $FRAMEWORK_MACH_O\"\necho \"FRAMEWORK_FAT_ARCH is $FRAMEWORK_FAT_ARCH\"\necho \"BUNDLE_IN_ROOT is $BUNDLE_IN_ROOT\"\nif [[ \"$FRAMEWORK_MACH_O\" =~ \"Archive :\" ]]; then\necho \"Rmove Static-Mach-O is $FRAMEWORK_EXECUTABLE_PATH\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\ndefaults write \"$FRAMEWORK/Info.plist\" CFBundlePackageType \"BNDL\"\ndefaults delete \"$FRAMEWORK/Info.plist\" CFBundleExecutable\nif [[ -d \"$BUNDLE_IN_ROOT\" ]]; then\nrm -rf \"$BUNDLE_IN_ROOT\"\nfi\nmv -f \"$FRAMEWORK\" \"$BUNDLE_IN_ROOT\"\nelif [[ \"$FRAMEWORK_FAT_ARCH\" =~ \"Architectures in the fat file\" ]]; then\n#statements\nEXTRACTED_ARCHS=()\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\nfi\ndone";
-		};
 		5E01DA183C61063357BEC222 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

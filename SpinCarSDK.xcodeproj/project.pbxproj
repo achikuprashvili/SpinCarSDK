@@ -76,7 +76,7 @@
 		58BBD47D21374AD8001699A4 /* SpinCarSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpinCarSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58BBD48021374AD8001699A4 /* SpinCarSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpinCarSDK.h; sourceTree = "<group>"; };
 		58BBD48121374AD8001699A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		58BBD48821374B0D001699A4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		58BBD48821374B0D001699A4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		58BBD48B21374BD9001699A4 /* SDKResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKResult.swift; sourceTree = "<group>"; };
 		58BBD48C21374BD9001699A4 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		58BBD48D21374BD9001699A4 /* ServiceCustomer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCustomer.swift; sourceTree = "<group>"; };

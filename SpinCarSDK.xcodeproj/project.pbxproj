@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58BBD48221374AD8001699A4 /* SpinCarSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 58BBD48021374AD8001699A4 /* SpinCarSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58BBD48921374B0D001699A4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 58BBD48821374B0D001699A4 /* Podfile */; };
+		58BBD49021374BD9001699A4 /* SDKResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD48B21374BD9001699A4 /* SDKResult.swift */; };
+		58BBD49121374BD9001699A4 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD48C21374BD9001699A4 /* AccountManager.swift */; };
+		58BBD49221374BD9001699A4 /* ServiceCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD48D21374BD9001699A4 /* ServiceCustomer.swift */; };
+		58BBD49321374BD9001699A4 /* SDKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD48E21374BD9001699A4 /* SDKError.swift */; };
+		58BBD49421374BD9001699A4 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD48F21374BD9001699A4 /* UserAccount.swift */; };
+		58BBD497213750D3001699A4 /* SpinCarHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD496213750D2001699A4 /* SpinCarHTTPClient.swift */; };
+		58BBD49C213751B3001699A4 /* SaveableMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD49B213751B3001699A4 /* SaveableMO.swift */; };
+		58BBD49E213751E4001699A4 /* ManagedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD49D213751E4001699A4 /* ManagedObjects.swift */; };
+		58BBD4A0213751F3001699A4 /* ViewMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD49F213751F3001699A4 /* ViewMO.swift */; };
+		58BBD4A221375215001699A4 /* SpinMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4A121375214001699A4 /* SpinMO.swift */; };
+		58BBD4A42137521E001699A4 /* ClopseupAssetMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4A32137521E001699A4 /* ClopseupAssetMO.swift */; };
+		58BBD4A621375225001699A4 /* AssetMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4A521375225001699A4 /* AssetMO.swift */; };
+		58BBD4AA2137528D001699A4 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4A82137528D001699A4 /* Common.swift */; };
+		58BBD4AB2137528D001699A4 /* SpinCarCrashlyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4A92137528D001699A4 /* SpinCarCrashlyticsLogger.swift */; };
+		58BBD4AF213762A6001699A4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BBD4AE213762A6001699A4 /* libc++.tbd */; };
+		58BBD4B7213766E0001699A4 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4B3213766DF001699A4 /* KeychainWrapper.m */; };
+		58BBD4B8213766E0001699A4 /* SpinCar-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 58BBD4B4213766DF001699A4 /* SpinCar-Bridging-Header.h */; };
+		58BBD4B9213766E0001699A4 /* KeychainWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 58BBD4B5213766DF001699A4 /* KeychainWrapper.h */; };
+		58BBD4BA213766E0001699A4 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4B6213766E0001699A4 /* KeychainWrapper.swift */; };
+		58BBD4BC21376805001699A4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4BB21376805001699A4 /* Constants.swift */; };
+		58BBD4C0213768AA001699A4 /* SettingsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4BF213768AA001699A4 /* SettingsConstants.swift */; };
+		58BBD4C2213768F1001699A4 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4C1213768F1001699A4 /* Configuration.swift */; };
+		58BBD4C421376936001699A4 /* MixpanelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4C321376936001699A4 /* MixpanelManager.swift */; };
+		58BBD4D9213769BB001699A4 /* UITableViewController+SpinCarTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4C6213769BB001699A4 /* UITableViewController+SpinCarTitle.swift */; };
+		58BBD4DA213769BB001699A4 /* UIImage+resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4C7213769BB001699A4 /* UIImage+resize.swift */; };
+		58BBD4DB213769BB001699A4 /* UIColor+SpinCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4C8213769BB001699A4 /* UIColor+SpinCar.swift */; };
+		58BBD4DC213769BB001699A4 /* UIDevice+ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4C9213769BB001699A4 /* UIDevice+ScreenSize.swift */; };
+		58BBD4DD213769BB001699A4 /* CGContext+PixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4CA213769BB001699A4 /* CGContext+PixelBuffer.swift */; };
+		58BBD4DF213769BB001699A4 /* UILabel+SpinCarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4CC213769BB001699A4 /* UILabel+SpinCarStyle.swift */; };
+		58BBD4E0213769BB001699A4 /* UIBarButtonItem+SpinCarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4CD213769BB001699A4 /* UIBarButtonItem+SpinCarNavigation.swift */; };
+		58BBD4E1213769BB001699A4 /* UIView+Borders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4CE213769BB001699A4 /* UIView+Borders.swift */; };
+		58BBD4E2213769BB001699A4 /* CVPixelBufferExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4CF213769BB001699A4 /* CVPixelBufferExtension.swift */; };
+		58BBD4E3213769BB001699A4 /* UIView+AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4D0213769BB001699A4 /* UIView+AspectRatio.swift */; };
+		58BBD4E4213769BB001699A4 /* UIFont+SpinCarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4D1213769BB001699A4 /* UIFont+SpinCarStyle.swift */; };
+		58BBD4E5213769BB001699A4 /* Data+conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4D2213769BB001699A4 /* Data+conversion.swift */; };
+		58BBD4E6213769BB001699A4 /* UIScrollView+ScrollingCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4D3213769BB001699A4 /* UIScrollView+ScrollingCheck.swift */; };
+		58BBD4E7213769BB001699A4 /* Date+string.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4D4213769BB001699A4 /* Date+string.swift */; };
+		58BBD4E8213769BB001699A4 /* UILabel+AdjustedFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4D5213769BB001699A4 /* UILabel+AdjustedFontSize.swift */; };
+		58BBD4E9213769BB001699A4 /* String+date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4D6213769BB001699A4 /* String+date.swift */; };
+		58BBD4EA213769BB001699A4 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4D7213769BB001699A4 /* UIImageExtension.swift */; };
+		58BBD4EB213769BB001699A4 /* UIView+ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4D8213769BB001699A4 /* UIView+ParentViewController.swift */; };
+		58BBD4F021376A58001699A4 /* SaveableFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4EE21376A58001699A4 /* SaveableFileManager.swift */; };
+		58BBD4F121376A58001699A4 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD4EF21376A58001699A4 /* CoreDataController.swift */; };
+		58BBD57321379292001699A4 /* AccountManager.swift in Headers */ = {isa = PBXBuildFile; fileRef = 58BBD48C21374BD9001699A4 /* AccountManager.swift */; };
+		58BBD574213792A0001699A4 /* UserAccount.swift in Headers */ = {isa = PBXBuildFile; fileRef = 58BBD48F21374BD9001699A4 /* UserAccount.swift */; };
+		58BBD5CF21379F30001699A4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BBD5C921379EF4001699A4 /* Alamofire.framework */; };
+		58BBD5D021379F30001699A4 /* IGListKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BBD5C621379EF3001699A4 /* IGListKit.framework */; };
+		58BBD5D121379F30001699A4 /* Mixpanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BBD5C821379EF4001699A4 /* Mixpanel.framework */; };
+		58BBD5D221379F30001699A4 /* SwipeCellKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BBD5C721379EF3001699A4 /* SwipeCellKit.framework */; };
+		58BBD5D72137A43B001699A4 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58BBD5C921379EF4001699A4 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		58BBD5D82137A43B001699A4 /* IGListKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58BBD5C621379EF3001699A4 /* IGListKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		58BBD5D92137A43B001699A4 /* Mixpanel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58BBD5C821379EF4001699A4 /* Mixpanel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		58BBD5DA2137A43B001699A4 /* SwipeCellKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58BBD5C721379EF3001699A4 /* SwipeCellKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F75A1BB80DF355CC1B4B47F /* Pods_SpinCarSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CAFBEE4F4A04899A3FF015 /* Pods_SpinCarSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58BBD54B21378AD1001699A4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				58BBD5D72137A43B001699A4 /* Alamofire.framework in Embed Frameworks */,
+				58BBD5D82137A43B001699A4 /* IGListKit.framework in Embed Frameworks */,
+				58BBD5D92137A43B001699A4 /* Mixpanel.framework in Embed Frameworks */,
+				58BBD5DA2137A43B001699A4 /* SwipeCellKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		58BBD47D21374AD8001699A4 /* SpinCarSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpinCarSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58BBD48021374AD8001699A4 /* SpinCarSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpinCarSDK.h; sourceTree = "<group>"; };
+		58BBD48121374AD8001699A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58BBD48821374B0D001699A4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		58BBD48B21374BD9001699A4 /* SDKResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKResult.swift; sourceTree = "<group>"; };
+		58BBD48C21374BD9001699A4 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		58BBD48D21374BD9001699A4 /* ServiceCustomer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCustomer.swift; sourceTree = "<group>"; };
+		58BBD48E21374BD9001699A4 /* SDKError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKError.swift; sourceTree = "<group>"; };
+		58BBD48F21374BD9001699A4 /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		58BBD496213750D2001699A4 /* SpinCarHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinCarHTTPClient.swift; sourceTree = "<group>"; };
+		58BBD49B213751B3001699A4 /* SaveableMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveableMO.swift; sourceTree = "<group>"; };
+		58BBD49D213751E4001699A4 /* ManagedObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObjects.swift; sourceTree = "<group>"; };
+		58BBD49F213751F3001699A4 /* ViewMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMO.swift; sourceTree = "<group>"; };
+		58BBD4A121375214001699A4 /* SpinMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinMO.swift; sourceTree = "<group>"; };
+		58BBD4A32137521E001699A4 /* ClopseupAssetMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClopseupAssetMO.swift; sourceTree = "<group>"; };
+		58BBD4A521375225001699A4 /* AssetMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetMO.swift; sourceTree = "<group>"; };
+		58BBD4A82137528D001699A4 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		58BBD4A92137528D001699A4 /* SpinCarCrashlyticsLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinCarCrashlyticsLogger.swift; sourceTree = "<group>"; };
+		58BBD4AE213762A6001699A4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		58BBD4B1213765AF001699A4 /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
+		58BBD4B3213766DF001699A4 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		58BBD4B4213766DF001699A4 /* SpinCar-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SpinCar-Bridging-Header.h"; sourceTree = "<group>"; };
+		58BBD4B5213766DF001699A4 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		58BBD4B6213766E0001699A4 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		58BBD4BB21376805001699A4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		58BBD4BF213768AA001699A4 /* SettingsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsConstants.swift; sourceTree = "<group>"; };
+		58BBD4C1213768F1001699A4 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		58BBD4C321376936001699A4 /* MixpanelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixpanelManager.swift; sourceTree = "<group>"; };
+		58BBD4C6213769BB001699A4 /* UITableViewController+SpinCarTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewController+SpinCarTitle.swift"; sourceTree = "<group>"; };
+		58BBD4C7213769BB001699A4 /* UIImage+resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+resize.swift"; sourceTree = "<group>"; };
+		58BBD4C8213769BB001699A4 /* UIColor+SpinCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+SpinCar.swift"; sourceTree = "<group>"; };
+		58BBD4C9213769BB001699A4 /* UIDevice+ScreenSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+ScreenSize.swift"; sourceTree = "<group>"; };
+		58BBD4CA213769BB001699A4 /* CGContext+PixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGContext+PixelBuffer.swift"; sourceTree = "<group>"; };
+		58BBD4CC213769BB001699A4 /* UILabel+SpinCarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+SpinCarStyle.swift"; sourceTree = "<group>"; };
+		58BBD4CD213769BB001699A4 /* UIBarButtonItem+SpinCarNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+SpinCarNavigation.swift"; sourceTree = "<group>"; };
+		58BBD4CE213769BB001699A4 /* UIView+Borders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Borders.swift"; sourceTree = "<group>"; };
+		58BBD4CF213769BB001699A4 /* CVPixelBufferExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVPixelBufferExtension.swift; sourceTree = "<group>"; };
+		58BBD4D0213769BB001699A4 /* UIView+AspectRatio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AspectRatio.swift"; sourceTree = "<group>"; };
+		58BBD4D1213769BB001699A4 /* UIFont+SpinCarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+SpinCarStyle.swift"; sourceTree = "<group>"; };
+		58BBD4D2213769BB001699A4 /* Data+conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+conversion.swift"; sourceTree = "<group>"; };
+		58BBD4D3213769BB001699A4 /* UIScrollView+ScrollingCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ScrollingCheck.swift"; sourceTree = "<group>"; };
+		58BBD4D4213769BB001699A4 /* Date+string.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+string.swift"; sourceTree = "<group>"; };
+		58BBD4D5213769BB001699A4 /* UILabel+AdjustedFontSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+AdjustedFontSize.swift"; sourceTree = "<group>"; };
+		58BBD4D6213769BB001699A4 /* String+date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+date.swift"; sourceTree = "<group>"; };
+		58BBD4D7213769BB001699A4 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		58BBD4D8213769BB001699A4 /* UIView+ParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ParentViewController.swift"; sourceTree = "<group>"; };
+		58BBD4EE21376A58001699A4 /* SaveableFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveableFileManager.swift; sourceTree = "<group>"; };
+		58BBD4EF21376A58001699A4 /* CoreDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		58BBD5C621379EF3001699A4 /* IGListKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IGListKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/SpinCarSDK-blapnoyrllxjivgvajoweegfszaz/Build/Products/Release-iphoneos/IGListKit/IGListKit.framework"; sourceTree = "<group>"; };
+		58BBD5C721379EF3001699A4 /* SwipeCellKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwipeCellKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/SpinCarSDK-blapnoyrllxjivgvajoweegfszaz/Build/Products/Release-iphoneos/SwipeCellKit/SwipeCellKit.framework"; sourceTree = "<group>"; };
+		58BBD5C821379EF4001699A4 /* Mixpanel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mixpanel.framework; path = "../../../Library/Developer/Xcode/DerivedData/SpinCarSDK-blapnoyrllxjivgvajoweegfszaz/Build/Products/Release-iphoneos/Mixpanel/Mixpanel.framework"; sourceTree = "<group>"; };
+		58BBD5C921379EF4001699A4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/SpinCarSDK-blapnoyrllxjivgvajoweegfszaz/Build/Products/Release-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		5B5BFEEA2FF7F326FA9AEFED /* Pods-SpinCarSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinCarSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpinCarSDK/Pods-SpinCarSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		89CAFBEE4F4A04899A3FF015 /* Pods_SpinCarSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpinCarSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F65C8171954F85BCF0CE8D /* Pods-SpinCarSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinCarSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpinCarSDK/Pods-SpinCarSDK.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58BBD47921374AD8001699A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58BBD5CF21379F30001699A4 /* Alamofire.framework in Frameworks */,
+				58BBD5D021379F30001699A4 /* IGListKit.framework in Frameworks */,
+				58BBD5D121379F30001699A4 /* Mixpanel.framework in Frameworks */,
+				58BBD5D221379F30001699A4 /* SwipeCellKit.framework in Frameworks */,
+				58BBD4AF213762A6001699A4 /* libc++.tbd in Frameworks */,
+				8F75A1BB80DF355CC1B4B47F /* Pods_SpinCarSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16C71A7C190CE4C59B730DA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BFEEA2FF7F326FA9AEFED /* Pods-SpinCarSDK.debug.xcconfig */,
+				B3F65C8171954F85BCF0CE8D /* Pods-SpinCarSDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		35CC103402CAF2B1B384CBB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58BBD4AE213762A6001699A4 /* libc++.tbd */,
+				89CAFBEE4F4A04899A3FF015 /* Pods_SpinCarSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58BBD47321374AD8001699A4 = {
+			isa = PBXGroup;
+			children = (
+				58BBD5C921379EF4001699A4 /* Alamofire.framework */,
+				58BBD5C621379EF3001699A4 /* IGListKit.framework */,
+				58BBD5C821379EF4001699A4 /* Mixpanel.framework */,
+				58BBD5C721379EF3001699A4 /* SwipeCellKit.framework */,
+				58BBD48821374B0D001699A4 /* Podfile */,
+				58BBD47F21374AD8001699A4 /* SpinCarSDK */,
+				58BBD4B0213765AF001699A4 /* CommonCrypto */,
+				58BBD47E21374AD8001699A4 /* Products */,
+				16C71A7C190CE4C59B730DA0 /* Pods */,
+				35CC103402CAF2B1B384CBB2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		58BBD47E21374AD8001699A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58BBD47D21374AD8001699A4 /* SpinCarSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58BBD47F21374AD8001699A4 /* SpinCarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				58BBD48A21374BD9001699A4 /* code */,
+				58BBD48021374AD8001699A4 /* SpinCarSDK.h */,
+				58BBD49521374D8F001699A4 /* SpinCarProjectClasses(Unclasiified) */,
+				58BBD48121374AD8001699A4 /* Info.plist */,
+			);
+			path = SpinCarSDK;
+			sourceTree = "<group>";
+		};
+		58BBD48A21374BD9001699A4 /* code */ = {
+			isa = PBXGroup;
+			children = (
+				58BBD48B21374BD9001699A4 /* SDKResult.swift */,
+				58BBD48C21374BD9001699A4 /* AccountManager.swift */,
+				58BBD48D21374BD9001699A4 /* ServiceCustomer.swift */,
+				58BBD48E21374BD9001699A4 /* SDKError.swift */,
+				58BBD48F21374BD9001699A4 /* UserAccount.swift */,
+			);
+			path = code;
+			sourceTree = "<group>";
+		};
+		58BBD49521374D8F001699A4 /* SpinCarProjectClasses(Unclasiified) */ = {
+			isa = PBXGroup;
+			children = (
+				58BBD4EC21376A37001699A4 /* CoreData */,
+				58BBD4C5213769BB001699A4 /* Extensions */,
+				58BBD4BE2137689A001699A4 /* Settings */,
+				58BBD4A72137527D001699A4 /* Helpers */,
+				58BBD49A213751A3001699A4 /* ManagedObjects */,
+				58BBD498213750DC001699A4 /* API */,
+			);
+			path = "SpinCarProjectClasses(Unclasiified)";
+			sourceTree = "<group>";
+		};
+		58BBD498213750DC001699A4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				58BBD4C321376936001699A4 /* MixpanelManager.swift */,
+				58BBD4B2213766DF001699A4 /* KeychainWrapper */,
+				58BBD4B6213766E0001699A4 /* KeychainWrapper.swift */,
+				58BBD496213750D2001699A4 /* SpinCarHTTPClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		58BBD49A213751A3001699A4 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				58BBD49F213751F3001699A4 /* ViewMO.swift */,
+				58BBD49D213751E4001699A4 /* ManagedObjects.swift */,
+				58BBD4A32137521E001699A4 /* ClopseupAssetMO.swift */,
+				58BBD4A121375214001699A4 /* SpinMO.swift */,
+				58BBD4A521375225001699A4 /* AssetMO.swift */,
+				58BBD49B213751B3001699A4 /* SaveableMO.swift */,
+			);
+			path = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		58BBD4A72137527D001699A4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				58BBD4C1213768F1001699A4 /* Configuration.swift */,
+				58BBD4BB21376805001699A4 /* Constants.swift */,
+				58BBD4A82137528D001699A4 /* Common.swift */,
+				58BBD4A92137528D001699A4 /* SpinCarCrashlyticsLogger.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		58BBD4B0213765AF001699A4 /* CommonCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				58BBD4B1213765AF001699A4 /* module.map */,
+			);
+			path = CommonCrypto;
+			sourceTree = "<group>";
+		};
+		58BBD4B2213766DF001699A4 /* KeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				58BBD4B3213766DF001699A4 /* KeychainWrapper.m */,
+				58BBD4B4213766DF001699A4 /* SpinCar-Bridging-Header.h */,
+				58BBD4B5213766DF001699A4 /* KeychainWrapper.h */,
+			);
+			path = KeychainWrapper;
+			sourceTree = "<group>";
+		};
+		58BBD4BE2137689A001699A4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				58BBD4BF213768AA001699A4 /* SettingsConstants.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		58BBD4C5213769BB001699A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				58BBD4C6213769BB001699A4 /* UITableViewController+SpinCarTitle.swift */,
+				58BBD4C7213769BB001699A4 /* UIImage+resize.swift */,
+				58BBD4C8213769BB001699A4 /* UIColor+SpinCar.swift */,
+				58BBD4C9213769BB001699A4 /* UIDevice+ScreenSize.swift */,
+				58BBD4CA213769BB001699A4 /* CGContext+PixelBuffer.swift */,
+				58BBD4CC213769BB001699A4 /* UILabel+SpinCarStyle.swift */,
+				58BBD4CD213769BB001699A4 /* UIBarButtonItem+SpinCarNavigation.swift */,
+				58BBD4CE213769BB001699A4 /* UIView+Borders.swift */,
+				58BBD4CF213769BB001699A4 /* CVPixelBufferExtension.swift */,
+				58BBD4D0213769BB001699A4 /* UIView+AspectRatio.swift */,
+				58BBD4D1213769BB001699A4 /* UIFont+SpinCarStyle.swift */,
+				58BBD4D2213769BB001699A4 /* Data+conversion.swift */,
+				58BBD4D3213769BB001699A4 /* UIScrollView+ScrollingCheck.swift */,
+				58BBD4D4213769BB001699A4 /* Date+string.swift */,
+				58BBD4D5213769BB001699A4 /* UILabel+AdjustedFontSize.swift */,
+				58BBD4D6213769BB001699A4 /* String+date.swift */,
+				58BBD4D7213769BB001699A4 /* UIImageExtension.swift */,
+				58BBD4D8213769BB001699A4 /* UIView+ParentViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		58BBD4EC21376A37001699A4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				58BBD4ED21376A45001699A4 /* Interface */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		58BBD4ED21376A45001699A4 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				58BBD4EF21376A58001699A4 /* CoreDataController.swift */,
+				58BBD4EE21376A58001699A4 /* SaveableFileManager.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		58BBD47A21374AD8001699A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58BBD4B9213766E0001699A4 /* KeychainWrapper.h in Headers */,
+				58BBD574213792A0001699A4 /* UserAccount.swift in Headers */,
+				58BBD57321379292001699A4 /* AccountManager.swift in Headers */,
+				58BBD4B8213766E0001699A4 /* SpinCar-Bridging-Header.h in Headers */,
+				58BBD48221374AD8001699A4 /* SpinCarSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		58BBD47C21374AD8001699A4 /* SpinCarSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58BBD48521374AD8001699A4 /* Build configuration list for PBXNativeTarget "SpinCarSDK" */;
+			buildPhases = (
+				5E01DA183C61063357BEC222 /* [CP] Check Pods Manifest.lock */,
+				58BBD47821374AD8001699A4 /* Sources */,
+				58BBD47921374AD8001699A4 /* Frameworks */,
+				58BBD47A21374AD8001699A4 /* Headers */,
+				58BBD47B21374AD8001699A4 /* Resources */,
+				58BBD542213787A7001699A4 /* [CP] Embed Pods Frameworks */,
+				58BBD54B21378AD1001699A4 /* Embed Frameworks */,
+				58BBD5E32137A8B0001699A4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpinCarSDK;
+			productName = SpinCarSDK;
+			productReference = 58BBD47D21374AD8001699A4 /* SpinCarSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58BBD47421374AD8001699A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Archil Kuprashvili";
+				TargetAttributes = {
+					58BBD47C21374AD8001699A4 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 58BBD47721374AD8001699A4 /* Build configuration list for PBXProject "SpinCarSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58BBD47321374AD8001699A4;
+			productRefGroup = 58BBD47E21374AD8001699A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58BBD47C21374AD8001699A4 /* SpinCarSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58BBD47B21374AD8001699A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58BBD48921374B0D001699A4 /* Podfile in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58BBD542213787A7001699A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
+		};
+		58BBD5E32137A8B0001699A4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\nBUNDLE_IN_ROOT=\"$APP_PATH/${FRAMEWORK_EXECUTABLE_NAME}.bundle\"\nif [[ -e \"$FRAMEWORK_EXECUTABLE_PATH\" ]]; then\nFRAMEWORK_MACH_O=\"$(otool -a \"$FRAMEWORK_EXECUTABLE_PATH\" | head -n 1)\"\nFRAMEWORK_FAT_ARCH=\"$(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\"\nelse\nFRAMEWORK_MACH_O=\"NO EXIST\"\nFRAMEWORK_FAT_ARCH=\"NO EXIST\"\nfi\necho \"FRAMEWORK_EXECUTABLE_NAME is $FRAMEWORK_EXECUTABLE_NAME\"\necho \"FRAMEWORK_EXECUTABLE_PATH is $FRAMEWORK_EXECUTABLE_PATH\"\necho \"FRAMEWORK_MACH_O is $FRAMEWORK_MACH_O\"\necho \"FRAMEWORK_FAT_ARCH is $FRAMEWORK_FAT_ARCH\"\necho \"BUNDLE_IN_ROOT is $BUNDLE_IN_ROOT\"\nif [[ \"$FRAMEWORK_MACH_O\" =~ \"Archive :\" ]]; then\necho \"Rmove Static-Mach-O is $FRAMEWORK_EXECUTABLE_PATH\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\ndefaults write \"$FRAMEWORK/Info.plist\" CFBundlePackageType \"BNDL\"\ndefaults delete \"$FRAMEWORK/Info.plist\" CFBundleExecutable\nif [[ -d \"$BUNDLE_IN_ROOT\" ]]; then\nrm -rf \"$BUNDLE_IN_ROOT\"\nfi\nmv -f \"$FRAMEWORK\" \"$BUNDLE_IN_ROOT\"\nelif [[ \"$FRAMEWORK_FAT_ARCH\" =~ \"Architectures in the fat file\" ]]; then\n#statements\nEXTRACTED_ARCHS=()\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\nfi\ndone";
+		};
+		5E01DA183C61063357BEC222 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpinCarSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58BBD47821374AD8001699A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58BBD4E6213769BB001699A4 /* UIScrollView+ScrollingCheck.swift in Sources */,
+				58BBD4A621375225001699A4 /* AssetMO.swift in Sources */,
+				58BBD4F121376A58001699A4 /* CoreDataController.swift in Sources */,
+				58BBD4E9213769BB001699A4 /* String+date.swift in Sources */,
+				58BBD4BC21376805001699A4 /* Constants.swift in Sources */,
+				58BBD49021374BD9001699A4 /* SDKResult.swift in Sources */,
+				58BBD4DF213769BB001699A4 /* UILabel+SpinCarStyle.swift in Sources */,
+				58BBD4C2213768F1001699A4 /* Configuration.swift in Sources */,
+				58BBD4E2213769BB001699A4 /* CVPixelBufferExtension.swift in Sources */,
+				58BBD4AA2137528D001699A4 /* Common.swift in Sources */,
+				58BBD4C0213768AA001699A4 /* SettingsConstants.swift in Sources */,
+				58BBD4E5213769BB001699A4 /* Data+conversion.swift in Sources */,
+				58BBD4D9213769BB001699A4 /* UITableViewController+SpinCarTitle.swift in Sources */,
+				58BBD4A221375215001699A4 /* SpinMO.swift in Sources */,
+				58BBD4EA213769BB001699A4 /* UIImageExtension.swift in Sources */,
+				58BBD49321374BD9001699A4 /* SDKError.swift in Sources */,
+				58BBD49221374BD9001699A4 /* ServiceCustomer.swift in Sources */,
+				58BBD4C421376936001699A4 /* MixpanelManager.swift in Sources */,
+				58BBD4AB2137528D001699A4 /* SpinCarCrashlyticsLogger.swift in Sources */,
+				58BBD4EB213769BB001699A4 /* UIView+ParentViewController.swift in Sources */,
+				58BBD49C213751B3001699A4 /* SaveableMO.swift in Sources */,
+				58BBD4E0213769BB001699A4 /* UIBarButtonItem+SpinCarNavigation.swift in Sources */,
+				58BBD49121374BD9001699A4 /* AccountManager.swift in Sources */,
+				58BBD4B7213766E0001699A4 /* KeychainWrapper.m in Sources */,
+				58BBD49421374BD9001699A4 /* UserAccount.swift in Sources */,
+				58BBD4DC213769BB001699A4 /* UIDevice+ScreenSize.swift in Sources */,
+				58BBD4E4213769BB001699A4 /* UIFont+SpinCarStyle.swift in Sources */,
+				58BBD4E8213769BB001699A4 /* UILabel+AdjustedFontSize.swift in Sources */,
+				58BBD4E3213769BB001699A4 /* UIView+AspectRatio.swift in Sources */,
+				58BBD4F021376A58001699A4 /* SaveableFileManager.swift in Sources */,
+				58BBD4A0213751F3001699A4 /* ViewMO.swift in Sources */,
+				58BBD4E7213769BB001699A4 /* Date+string.swift in Sources */,
+				58BBD4A42137521E001699A4 /* ClopseupAssetMO.swift in Sources */,
+				58BBD4DB213769BB001699A4 /* UIColor+SpinCar.swift in Sources */,
+				58BBD4BA213766E0001699A4 /* KeychainWrapper.swift in Sources */,
+				58BBD4E1213769BB001699A4 /* UIView+Borders.swift in Sources */,
+				58BBD4DA213769BB001699A4 /* UIImage+resize.swift in Sources */,
+				58BBD4DD213769BB001699A4 /* CGContext+PixelBuffer.swift in Sources */,
+				58BBD49E213751E4001699A4 /* ManagedObjects.swift in Sources */,
+				58BBD497213750D3001699A4 /* SpinCarHTTPClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58BBD48321374AD8001699A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		58BBD48421374AD8001699A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		58BBD48621374AD8001699A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B5BFEEA2FF7F326FA9AEFED /* Pods-SpinCarSDK.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = SpinCarSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.achiko.SpinCarSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = CommonCrypto;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58BBD48721374AD8001699A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3F65C8171954F85BCF0CE8D /* Pods-SpinCarSDK.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = SpinCarSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.achiko.SpinCarSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = CommonCrypto;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58BBD47721374AD8001699A4 /* Build configuration list for PBXProject "SpinCarSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58BBD48321374AD8001699A4 /* Debug */,
+				58BBD48421374AD8001699A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58BBD48521374AD8001699A4 /* Build configuration list for PBXNativeTarget "SpinCarSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58BBD48621374AD8001699A4 /* Debug */,
+				58BBD48721374AD8001699A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58BBD47421374AD8001699A4 /* Project object */;
+}

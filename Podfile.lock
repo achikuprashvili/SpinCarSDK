@@ -1,0 +1,57 @@
+PODS:
+  - Alamofire (4.5.1)
+  - Crashlytics (3.8.6):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.13)
+  - IGListKit (3.1.1):
+    - IGListKit/Default (= 3.1.1)
+  - IGListKit/Default (3.1.1):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.1.1)
+  - Mixpanel (3.2.9)
+  - OpenCV (3.4.2)
+  - SwiftLint (0.27.0)
+  - SwipeCellKit (1.8.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5.1)
+  - Crashlytics (~> 3.8.6)
+  - Fabric (~> 1.6.13)
+  - IGListKit (~> 3.1.1)
+  - Mixpanel (~> 3.2.1)
+  - OpenCV
+  - SwiftLint
+  - SwipeCellKit (from `https://github.com/ameerSpincar/SwipeCellKit.git`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Crashlytics
+    - Fabric
+    - IGListKit
+    - Mixpanel
+    - OpenCV
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  SwipeCellKit:
+    :git: https://github.com/ameerSpincar/SwipeCellKit.git
+
+CHECKOUT OPTIONS:
+  SwipeCellKit:
+    :commit: c1073b0616a7094f71c64a3b3a73399252bd4108
+    :git: https://github.com/ameerSpincar/SwipeCellKit.git
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Crashlytics: 95d05f4e4c19a771250c4bd9ce344d996de32bbf
+  Fabric: 2fb5676bc811af011a04513451f463dac6803206
+  IGListKit: cb97f405ae43e59fe1da74271e19427ec20d3c07
+  Mixpanel: 85cd02171dc84a8b0295bbe3db65604e2934b920
+  OpenCV: 452909747854c92e0f59670961ed5131f5286cb5
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
+  SwipeCellKit: 048e2035809b7a4bc71b86bcb76c7b85d28d6620
+
+PODFILE CHECKSUM: b81cda02bd3a5d7b9f161f6f5bf14687d65d4142
+
+COCOAPODS: 1.5.3

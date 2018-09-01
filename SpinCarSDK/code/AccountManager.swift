@@ -9,11 +9,15 @@ import Foundation
 import Alamofire
 open class AccountManager {
     let HTTPClient: SpinCarHTTPClient = SpinCarHTTPClient()
+    private var userAccount: UserAccount = UserAccount()
+    
+    open static let shared = AccountManager()
+    
     private init(){
         _ = userAccount.setError(error: SDKError.ACCOUNT_LOGIN)
     }
-    public static let shared = AccountManager()
-    private var userAccount: UserAccount = UserAccount()
+    
+    
     public func login(email: String, password: String, completionHandler: @escaping (Bool, UserAccount) -> ()){
         HTTPClient.login(email: email, password: password) { (success, response) in
             if (!success){
@@ -23,19 +27,32 @@ open class AccountManager {
                 completionHandler(success, userAccount)
                 
             }else{
-                let userAccount: UserAccount = UserAccount()
-                userAccount.setShootWalkaround(shootWalkaround: (response["shoot_walkaround"] as? Bool) ?? true)
+                
+                self.userAccount.setShootWalkaround(shootWalkaround: (response["shoot_walkaround"] as? Bool) ?? true)
                 if let token = response["token"] as? String {
+                    self.userAccount.setError(error: .NO_ERROR)
+                    self.userAccount.setEmail(email: email)
+                    self.userAccount.setPassword(password: password)
+                    self.userAccount.setToken(token: token)
+                    self.userAccount.setTokenUpdateTime(tokenUpdateTime: Date())
+                    self.userAccount.setMessage(message: "valid user account")
+                    if let lotServiceCustomers = response["lot_service_customers"] as? String {
+                        let accounts = lotServiceCustomers.components(separatedBy: ",")
+                        for account in accounts {
+                            // String will be in format: "userID:nickname"
+                            let temp = account.components(separatedBy: ":")
+                            if let userID = temp.first,
+                                let nickname = temp.last {
+                                self.userAccount.addServiceCustomer(serviceCustomer: ServiceCustomer(id: userID, name: nickname))
+                            }
+                        }
+                    }
                     
-                    userAccount.setEmail(email: email)
-                    userAccount.setPassword(password: password)
-                    userAccount.setToken(token: token)
-                    userAccount.setTokenUpdateTime(tokenUpdateTime: Date())
-                    completionHandler(success, userAccount)
+                    completionHandler(success, self.userAccount)
                 }else{
-                    userAccount.setError(error: SDKError.ACCOUNT_LOGIN)
-                    userAccount.setMessage(message: "failed to get token")
-                    completionHandler(success, userAccount)
+                    self.userAccount.setError(error: SDKError.ACCOUNT_LOGIN)
+                    self.userAccount.setMessage(message: "failed to get token")
+                    completionHandler(success, self.userAccount)
                 }
             }
         }
@@ -43,21 +60,20 @@ open class AccountManager {
         
     }
  
-    public func getAccount() -> AnyObject{
+    public func getAccount() -> UserAccount{
         
         
-        return NSObject()
+        return userAccount
     }
     
-    public func clearAccount() -> AnyObject{
-        
-        
-        return NSObject()
+    public func clearAccount(){
+        userAccount = UserAccount()
+        userAccount.setError(error: .ACCOUNT_LOAD)
     }
     
-    public func updateToken() -> AnyObject{
+    public func updateToken(){
         
         
-        return NSObject()
+        
     }
 }

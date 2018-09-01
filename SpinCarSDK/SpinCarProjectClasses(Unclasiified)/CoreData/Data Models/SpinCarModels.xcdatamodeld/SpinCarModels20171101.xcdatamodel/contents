@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17E199" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Asset" representedClassName=".AssetMO" syncable="YES">
+        <attribute name="etag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="tag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnailPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uploaded" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="view" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="View" inverseName="assets" inverseEntity="View" syncable="YES"/>
+    </entity>
+    <entity name="CloseupAsset" representedClassName=".CloseupAssetMO" parentEntity="Asset" syncable="YES">
+        <attribute name="isHotspot" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isMisc" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="closeupView" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CloseupView" inverseName="closeupAssets" inverseEntity="CloseupView" syncable="YES"/>
+    </entity>
+    <entity name="CloseupView" representedClassName=".CloseupViewMO" parentEntity="View" syncable="YES">
+        <relationship name="closeupAssets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CloseupAsset" inverseName="closeupView" inverseEntity="CloseupAsset" syncable="YES"/>
+    </entity>
+    <entity name="Event" representedClassName=".EventMO" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="spin" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Spin" syncable="YES"/>
+    </entity>
+    <entity name="ExteriorView" representedClassName=".ExteriorViewMO" parentEntity="View" syncable="YES">
+        <attribute name="exteriorType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="InteriorView" representedClassName=".InteriorViewMO" parentEntity="View" syncable="YES">
+        <attribute name="pano" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Saveable" representedClassName=".SaveableMO" isAbstract="YES" syncable="YES">
+        <attribute name="accountID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="views" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="View" inverseName="saveable" inverseEntity="View" syncable="YES"/>
+    </entity>
+    <entity name="Spin" representedClassName=".SpinMO" parentEntity="Saveable" syncable="YES">
+        <attribute name="defaultHotspots" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Event" syncable="YES"/>
+    </entity>
+    <entity name="Video" representedClassName=".VideoMO" parentEntity="Saveable" syncable="YES"/>
+    <entity name="View" representedClassName=".ViewMO" isAbstract="YES" syncable="YES">
+        <relationship name="assets" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Asset" inverseName="view" inverseEntity="Asset" syncable="YES"/>
+        <relationship name="saveable" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Saveable" inverseName="views" inverseEntity="Saveable" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Asset" positionX="-902" positionY="-54" width="128" height="150"/>
+        <element name="CloseupAsset" positionX="-963" positionY="162" width="128" height="88"/>
+        <element name="CloseupView" positionX="-639" positionY="234" width="128" height="58"/>
+        <element name="Event" positionX="-864" positionY="-306" width="128" height="90"/>
+        <element name="ExteriorView" positionX="-686" positionY="144" width="128" height="58"/>
+        <element name="InteriorView" positionX="-450" positionY="234" width="128" height="58"/>
+        <element name="Saveable" positionX="-414" positionY="-315" width="128" height="120"/>
+        <element name="Spin" positionX="-380" positionY="27" width="128" height="75"/>
+        <element name="Video" positionX="-299" positionY="-115" width="128" height="43"/>
+        <element name="View" positionX="-630" positionY="36" width="128" height="73"/>
+    </elements>
+</model>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Asset" representedClassName=".AssetMO" syncable="YES">
+        <attribute name="etag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="tag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnailPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uploaded" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="view" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="View" inverseName="assets" inverseEntity="View" syncable="YES"/>
+    </entity>
+    <entity name="CloseupView" representedClassName=".CloseupViewMO" parentEntity="ImageView" syncable="YES"/>
+    <entity name="ExteriorView" representedClassName=".ExteriorViewMO" parentEntity="View" syncable="YES">
+        <attribute name="exteriorType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="HotspotView" representedClassName=".HotspotViewMO" parentEntity="ImageView" syncable="YES"/>
+    <entity name="ImageView" representedClassName=".ImageViewMO" isAbstract="YES" parentEntity="View" syncable="YES"/>
+    <entity name="InteriorView" representedClassName=".InteriorViewMO" parentEntity="ImageView" syncable="YES">
+        <attribute name="pano" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="MiscView" representedClassName=".MiscViewMO" parentEntity="ImageView" syncable="YES"/>
+    <entity name="Saveable" representedClassName=".SaveableMO" isAbstract="YES" syncable="YES">
+        <attribute name="accountID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="views" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="View" inverseName="saveable" inverseEntity="View" syncable="YES"/>
+    </entity>
+    <entity name="Spin" representedClassName=".SpinMO" parentEntity="Saveable" syncable="YES">
+        <attribute name="defaultHotspots" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Video" representedClassName=".VideoMO" parentEntity="Saveable" syncable="YES">
+        <attribute name="customerEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customerPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="make" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageToCustomer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="View" representedClassName=".ViewMO" isAbstract="YES" syncable="YES">
+        <relationship name="assets" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Asset" inverseName="view" inverseEntity="Asset" syncable="YES"/>
+        <relationship name="saveable" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Saveable" inverseName="views" inverseEntity="Saveable" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Asset" positionX="-893" positionY="173" width="128" height="150"/>
+        <element name="CloseupView" positionX="-639" positionY="234" width="128" height="45"/>
+        <element name="ExteriorView" positionX="-686" positionY="144" width="128" height="58"/>
+        <element name="HotspotView" positionX="-369" positionY="171" width="128" height="45"/>
+        <element name="ImageView" positionX="-542" positionY="144" width="128" height="45"/>
+        <element name="InteriorView" positionX="-450" positionY="234" width="128" height="60"/>
+        <element name="MiscView" positionX="-558" positionY="306" width="128" height="45"/>
+        <element name="Saveable" positionX="-299" positionY="-126" width="128" height="120"/>
+        <element name="Spin" positionX="-380" positionY="27" width="128" height="58"/>
+        <element name="Video" positionX="-173" positionY="27" width="128" height="150"/>
+        <element name="View" positionX="-630" positionY="36" width="128" height="73"/>
+    </elements>
+</model>

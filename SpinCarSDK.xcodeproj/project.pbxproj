@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		580D6BD821387216000F4290 /* SpinCarSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 580D6BD721387216000F4290 /* SpinCarSDK.podspec */; };
+		580D6BE42138928D000F4290 /* SpinCarModels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 580D6BDD2138928D000F4290 /* SpinCarModels.xcdatamodeld */; };
+		580D6BE52138928D000F4290 /* CustomMigration_20171011_20171101.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 580D6BE22138928D000F4290 /* CustomMigration_20171011_20171101.xcmappingmodel */; };
+		580D6BE72138BCDB000F4290 /* Spin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D6BE62138BCDB000F4290 /* Spin.swift */; };
+		580D6BE92138BF0E000F4290 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D6BE82138BF0E000F4290 /* Asset.swift */; };
+		580D6BEB2138E5A9000F4290 /* SpinCarSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D6BEA2138E5A9000F4290 /* SpinCarSDK.swift */; };
+		580D6BED2138EC90000F4290 /* SpinRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D6BEC2138EC90000F4290 /* SpinRepository.swift */; };
+		580D6BEF2138F0A1000F4290 /* SpinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D6BEE2138F0A1000F4290 /* SpinManager.swift */; };
+		5872867F213A5AC90047E8E7 /* UploadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5872867E213A5AC90047E8E7 /* UploadManager.swift */; };
+		58728688213A5B150047E8E7 /* StartRecording.caf in Resources */ = {isa = PBXBuildFile; fileRef = 58728682213A5B150047E8E7 /* StartRecording.caf */; };
+		58728689213A5B150047E8E7 /* Warning.caf in Resources */ = {isa = PBXBuildFile; fileRef = 58728683213A5B150047E8E7 /* Warning.caf */; };
+		5872868A213A5B150047E8E7 /* Accept.caf in Resources */ = {isa = PBXBuildFile; fileRef = 58728684213A5B150047E8E7 /* Accept.caf */; };
+		5872868B213A5B150047E8E7 /* AppLaunch.caf in Resources */ = {isa = PBXBuildFile; fileRef = 58728685213A5B150047E8E7 /* AppLaunch.caf */; };
+		5872868C213A5B150047E8E7 /* Success.caf in Resources */ = {isa = PBXBuildFile; fileRef = 58728686213A5B150047E8E7 /* Success.caf */; };
+		5872868D213A5B150047E8E7 /* StopRecording.caf in Resources */ = {isa = PBXBuildFile; fileRef = 58728687213A5B150047E8E7 /* StopRecording.caf */; };
+		5872868F213A5B5A0047E8E7 /* SoundEffectPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5872868E213A5B5A0047E8E7 /* SoundEffectPlayer.swift */; };
 		58BBD48221374AD8001699A4 /* SpinCarSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 58BBD48021374AD8001699A4 /* SpinCarSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58BBD48921374B0D001699A4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 58BBD48821374B0D001699A4 /* Podfile */; };
 		58BBD49021374BD9001699A4 /* SDKResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD48B21374BD9001699A4 /* SDKResult.swift */; };
@@ -58,21 +73,26 @@
 		8F75A1BB80DF355CC1B4B47F /* Pods_SpinCarSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CAFBEE4F4A04899A3FF015 /* Pods_SpinCarSDK.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		58BBD54B21378AD1001699A4 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		580D6BD721387216000F4290 /* SpinCarSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SpinCarSDK.podspec; sourceTree = "<group>"; };
+		580D6BDE2138928D000F4290 /* SpinCarModels20171101.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpinCarModels20171101.xcdatamodel; sourceTree = "<group>"; };
+		580D6BDF2138928D000F4290 /* SpinCarModels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpinCarModels.xcdatamodel; sourceTree = "<group>"; };
+		580D6BE02138928D000F4290 /* SpinCarModels v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SpinCarModels v2.xcdatamodel"; sourceTree = "<group>"; };
+		580D6BE12138928D000F4290 /* SpinCarModels20171011.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpinCarModels20171011.xcdatamodel; sourceTree = "<group>"; };
+		580D6BE22138928D000F4290 /* CustomMigration_20171011_20171101.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = CustomMigration_20171011_20171101.xcmappingmodel; sourceTree = "<group>"; };
+		580D6BE62138BCDB000F4290 /* Spin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spin.swift; sourceTree = "<group>"; };
+		580D6BE82138BF0E000F4290 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		580D6BEA2138E5A9000F4290 /* SpinCarSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinCarSDK.swift; sourceTree = "<group>"; };
+		580D6BEC2138EC90000F4290 /* SpinRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinRepository.swift; sourceTree = "<group>"; };
+		580D6BEE2138F0A1000F4290 /* SpinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinManager.swift; sourceTree = "<group>"; };
+		5872867E213A5AC90047E8E7 /* UploadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadManager.swift; sourceTree = "<group>"; };
+		58728682213A5B150047E8E7 /* StartRecording.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = StartRecording.caf; sourceTree = "<group>"; };
+		58728683213A5B150047E8E7 /* Warning.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Warning.caf; sourceTree = "<group>"; };
+		58728684213A5B150047E8E7 /* Accept.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Accept.caf; sourceTree = "<group>"; };
+		58728685213A5B150047E8E7 /* AppLaunch.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppLaunch.caf; sourceTree = "<group>"; };
+		58728686213A5B150047E8E7 /* Success.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Success.caf; sourceTree = "<group>"; };
+		58728687213A5B150047E8E7 /* StopRecording.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = StopRecording.caf; sourceTree = "<group>"; };
+		5872868E213A5B5A0047E8E7 /* SoundEffectPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundEffectPlayer.swift; sourceTree = "<group>"; };
 		58BBD47D21374AD8001699A4 /* SpinCarSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpinCarSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58BBD48021374AD8001699A4 /* SpinCarSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpinCarSDK.h; sourceTree = "<group>"; };
 		58BBD48121374AD8001699A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -157,6 +177,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		580D6BDB2138928D000F4290 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				580D6BDD2138928D000F4290 /* SpinCarModels.xcdatamodeld */,
+				580D6BE22138928D000F4290 /* CustomMigration_20171011_20171101.xcmappingmodel */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		58728680213A5B0B0047E8E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				58728681213A5B150047E8E7 /* Sound Effects */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		58728681213A5B150047E8E7 /* Sound Effects */ = {
+			isa = PBXGroup;
+			children = (
+				58728682213A5B150047E8E7 /* StartRecording.caf */,
+				58728683213A5B150047E8E7 /* Warning.caf */,
+				58728684213A5B150047E8E7 /* Accept.caf */,
+				58728685213A5B150047E8E7 /* AppLaunch.caf */,
+				58728686213A5B150047E8E7 /* Success.caf */,
+				58728687213A5B150047E8E7 /* StopRecording.caf */,
+			);
+			path = "Sound Effects";
+			sourceTree = "<group>";
+		};
 		58BBD47321374AD8001699A4 = {
 			isa = PBXGroup;
 			children = (
@@ -181,8 +231,9 @@
 		58BBD47F21374AD8001699A4 /* SpinCarSDK */ = {
 			isa = PBXGroup;
 			children = (
-				58BBD48A21374BD9001699A4 /* code */,
 				58BBD48021374AD8001699A4 /* SpinCarSDK.h */,
+				58728680213A5B0B0047E8E7 /* Resources */,
+				58BBD48A21374BD9001699A4 /* code */,
 				58BBD49521374D8F001699A4 /* SpinCarProjectClasses(Unclasiified) */,
 				58BBD48121374AD8001699A4 /* Info.plist */,
 			);
@@ -195,7 +246,12 @@
 				58BBD48B21374BD9001699A4 /* SDKResult.swift */,
 				58BBD48C21374BD9001699A4 /* AccountManager.swift */,
 				58BBD48D21374BD9001699A4 /* ServiceCustomer.swift */,
+				580D6BE62138BCDB000F4290 /* Spin.swift */,
+				580D6BEC2138EC90000F4290 /* SpinRepository.swift */,
+				580D6BEE2138F0A1000F4290 /* SpinManager.swift */,
+				580D6BE82138BF0E000F4290 /* Asset.swift */,
 				58BBD48E21374BD9001699A4 /* SDKError.swift */,
+				580D6BEA2138E5A9000F4290 /* SpinCarSDK.swift */,
 				58BBD48F21374BD9001699A4 /* UserAccount.swift */,
 			);
 			path = code;
@@ -208,7 +264,6 @@
 				58BBD4C5213769BB001699A4 /* Extensions */,
 				58BBD4BE2137689A001699A4 /* Settings */,
 				58BBD4A72137527D001699A4 /* Helpers */,
-				58BBD49A213751A3001699A4 /* ManagedObjects */,
 				58BBD498213750DC001699A4 /* API */,
 			);
 			path = "SpinCarProjectClasses(Unclasiified)";
@@ -217,6 +272,7 @@
 		58BBD498213750DC001699A4 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				5872867E213A5AC90047E8E7 /* UploadManager.swift */,
 				58BBD4C321376936001699A4 /* MixpanelManager.swift */,
 				58BBD4B2213766DF001699A4 /* KeychainWrapper */,
 				58BBD4B6213766E0001699A4 /* KeychainWrapper.swift */,
@@ -241,6 +297,7 @@
 		58BBD4A72137527D001699A4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				5872868E213A5B5A0047E8E7 /* SoundEffectPlayer.swift */,
 				58BBD4C1213768F1001699A4 /* Configuration.swift */,
 				58BBD4BB21376805001699A4 /* Constants.swift */,
 				58BBD4A82137528D001699A4 /* Common.swift */,
@@ -303,6 +360,8 @@
 		58BBD4EC21376A37001699A4 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				58BBD49A213751A3001699A4 /* ManagedObjects */,
+				580D6BDB2138928D000F4290 /* Data Models */,
 				58BBD4ED21376A45001699A4 /* Interface */,
 			);
 			path = CoreData;
@@ -344,7 +403,7 @@
 				58BBD47921374AD8001699A4 /* Frameworks */,
 				58BBD47A21374AD8001699A4 /* Headers */,
 				58BBD47B21374AD8001699A4 /* Resources */,
-				58BBD54B21378AD1001699A4 /* Embed Frameworks */,
+				580D6C53213A26EE000F4290 /* Crashlyrics */,
 			);
 			buildRules = (
 			);
@@ -391,14 +450,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5872868A213A5B150047E8E7 /* Accept.caf in Resources */,
 				580D6BD821387216000F4290 /* SpinCarSDK.podspec in Resources */,
+				58728689213A5B150047E8E7 /* Warning.caf in Resources */,
+				5872868C213A5B150047E8E7 /* Success.caf in Resources */,
+				5872868D213A5B150047E8E7 /* StopRecording.caf in Resources */,
+				58728688213A5B150047E8E7 /* StartRecording.caf in Resources */,
 				58BBD48921374B0D001699A4 /* Podfile in Resources */,
+				5872868B213A5B150047E8E7 /* AppLaunch.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		580D6C53213A26EE000F4290 /* Crashlyrics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Crashlyrics;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" e910235e396c86a2e4ef3e6ef39729ccfbe510b7 b9ae2c493aa4adadc97718a9501634ff3a80776643b964a7f9380e8b3608bef4";
+		};
 		5E01DA183C61063357BEC222 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -436,16 +515,23 @@
 				58BBD4AA2137528D001699A4 /* Common.swift in Sources */,
 				58BBD4C0213768AA001699A4 /* SettingsConstants.swift in Sources */,
 				58BBD4E5213769BB001699A4 /* Data+conversion.swift in Sources */,
+				580D6BEF2138F0A1000F4290 /* SpinManager.swift in Sources */,
 				58BBD4D9213769BB001699A4 /* UITableViewController+SpinCarTitle.swift in Sources */,
+				5872868F213A5B5A0047E8E7 /* SoundEffectPlayer.swift in Sources */,
+				5872867F213A5AC90047E8E7 /* UploadManager.swift in Sources */,
 				58BBD4A221375215001699A4 /* SpinMO.swift in Sources */,
+				580D6BE92138BF0E000F4290 /* Asset.swift in Sources */,
 				58BBD4EA213769BB001699A4 /* UIImageExtension.swift in Sources */,
 				58BBD49321374BD9001699A4 /* SDKError.swift in Sources */,
 				58BBD49221374BD9001699A4 /* ServiceCustomer.swift in Sources */,
+				580D6BEB2138E5A9000F4290 /* SpinCarSDK.swift in Sources */,
 				58BBD4C421376936001699A4 /* MixpanelManager.swift in Sources */,
 				58BBD4AB2137528D001699A4 /* SpinCarCrashlyticsLogger.swift in Sources */,
 				58BBD4EB213769BB001699A4 /* UIView+ParentViewController.swift in Sources */,
 				58BBD49C213751B3001699A4 /* SaveableMO.swift in Sources */,
 				58BBD4E0213769BB001699A4 /* UIBarButtonItem+SpinCarNavigation.swift in Sources */,
+				580D6BE72138BCDB000F4290 /* Spin.swift in Sources */,
+				580D6BE42138928D000F4290 /* SpinCarModels.xcdatamodeld in Sources */,
 				58BBD49121374BD9001699A4 /* AccountManager.swift in Sources */,
 				58BBD4B7213766E0001699A4 /* KeychainWrapper.m in Sources */,
 				58BBD49421374BD9001699A4 /* UserAccount.swift in Sources */,
@@ -458,6 +544,8 @@
 				58BBD4E7213769BB001699A4 /* Date+string.swift in Sources */,
 				58BBD4A42137521E001699A4 /* ClopseupAssetMO.swift in Sources */,
 				58BBD4DB213769BB001699A4 /* UIColor+SpinCar.swift in Sources */,
+				580D6BE52138928D000F4290 /* CustomMigration_20171011_20171101.xcmappingmodel in Sources */,
+				580D6BED2138EC90000F4290 /* SpinRepository.swift in Sources */,
 				58BBD4BA213766E0001699A4 /* KeychainWrapper.swift in Sources */,
 				58BBD4E1213769BB001699A4 /* UIView+Borders.swift in Sources */,
 				58BBD4DA213769BB001699A4 /* UIImage+resize.swift in Sources */,
@@ -676,6 +764,22 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		580D6BDD2138928D000F4290 /* SpinCarModels.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				580D6BDE2138928D000F4290 /* SpinCarModels20171101.xcdatamodel */,
+				580D6BDF2138928D000F4290 /* SpinCarModels.xcdatamodel */,
+				580D6BE02138928D000F4290 /* SpinCarModels v2.xcdatamodel */,
+				580D6BE12138928D000F4290 /* SpinCarModels20171011.xcdatamodel */,
+			);
+			currentVersion = 580D6BDE2138928D000F4290 /* SpinCarModels20171101.xcdatamodel */;
+			path = SpinCarModels.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 58BBD47421374AD8001699A4 /* Project object */;
 }

@@ -15,7 +15,8 @@ class DataController: NSObject {
     static let sharedInstance = DataController()
 
     override init () {
-        guard let modelURL = Bundle.main.url(forResource: "SpinCarModels", withExtension:"momd") else {
+        
+        guard let modelURL = Bundle(for: type(of: self)).url(forResource: "SpinCarModels", withExtension:"momd") else {
             // This should only happen if this file doesn't exist in the project. 
             fatalError("Error loading model from bundle")
         }
@@ -29,7 +30,7 @@ class DataController: NSObject {
         let psc = NSPersistentStoreCoordinator(managedObjectModel: mom)
         self.managedObjectContext.persistentStoreCoordinator = psc
 
-        DispatchQueue.global(qos: DispatchQoS.QoSClass.background).async {
+//        DispatchQueue.global(qos: DispatchQoS.QoSClass.background).sync {
             let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
             let docURL = urls[urls.endIndex-1]
             // Keep track of previous if migration is warranted.
@@ -39,13 +40,13 @@ class DataController: NSObject {
             let options = [NSMigratePersistentStoresAutomaticallyOption: true, NSInferMappingModelAutomaticallyOption: true]
             do {
                 try psc.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: options)
-                DispatchQueue.main.sync(execute: {
+                
                     UserDefaults.standard.set(1, forKey: "finishedMigration")
-                })
+                
             } catch {
                 SpinCarCrashlyticsLogger.SpinCarLogger.log_non_fatal("Failed to migrate store", reason: "\(error)" as AnyObject)
             }
-        }
+//        }
         super.init()
         NotificationCenter.default.addObserver(
             self, selector: #selector(DataController.contextDidSaveContext(_:)), name: NSNotification.Name.NSManagedObjectContextDidSave, object: nil

@@ -13,7 +13,7 @@ open class UserAccount: SDKResult{
     private var tokenUpdateTime: Date!
     private var serviceCustomerDictionary: [String: ServiceCustomer] = [:]
     private var shootWalkaround: Bool!
-    
+    private var selectedServiceCustomer: ServiceCustomer?
     
     public func getEmail() -> String{
         return email
@@ -31,24 +31,39 @@ open class UserAccount: SDKResult{
         return tokenUpdateTime
     }
     
-    public func getServiceCustomerMapImmutable() -> NSDictionary{
-        return NSDictionary(dictionary: serviceCustomerDictionary)
-    }
-    public func getServiceCustomerMap() -> NSMutableDictionary{
-        return NSMutableDictionary(dictionary: serviceCustomerDictionary)
-    }
+
     
     public func canShootWalkaround() -> Bool{
         return shootWalkaround
     }
     
     public func isMultyUser() -> Bool{
-        return !serviceCustomerDictionary.isEmpty
+        return serviceCustomerDictionary.count > 1
     }
     
+    public func getSelectedServiceCustomer() -> ServiceCustomer? {
+        return selectedServiceCustomer
+    }
+    
+    public func selectServiceCustomer(By customerID: String) -> Bool{
+        if serviceCustomerDictionary.keys.contains(customerID){
+            selectedServiceCustomer = serviceCustomerDictionary[customerID]
+            return true
+        }
+        return false
+    }
     override init() {
         super.init()
     }
+    
+    func addServiceCustomer(serviceCustomer: ServiceCustomer){
+        serviceCustomerDictionary[serviceCustomer.getId()] = serviceCustomer
+        if selectedServiceCustomer == nil {
+            selectedServiceCustomer = serviceCustomer
+        }
+    }
+    
+    
     
     func setEmail(email: String){
         self.email = email

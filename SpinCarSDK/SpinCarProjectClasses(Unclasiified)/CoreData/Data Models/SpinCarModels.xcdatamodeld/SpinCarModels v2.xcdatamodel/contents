@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13532" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="SpinCarModels v2">
+    <entity name="Asset" representedClassName=".AssetMO" syncable="YES">
+        <attribute name="etag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="tag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnailPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uploaded" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="view" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="View" inverseName="assets" inverseEntity="View" syncable="YES"/>
+    </entity>
+    <entity name="CloseupView" representedClassName=".CloseupViewMO" parentEntity="ImageView" syncable="YES"/>
+    <entity name="Event" representedClassName="Event" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" defaultValueString="Information Not Available." syncable="YES"/>
+        <relationship name="saveable" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Saveable" syncable="YES"/>
+    </entity>
+    <entity name="ExteriorView" representedClassName=".ExteriorViewMO" parentEntity="View" syncable="YES">
+        <attribute name="exteriorType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ImageView" representedClassName=".ImageViewMO" isAbstract="YES" parentEntity="View" syncable="YES"/>
+    <entity name="InteriorView" representedClassName=".InteriorViewMO" parentEntity="ImageView" syncable="YES">
+        <attribute name="pano" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="MiscView" representedClassName=".MiscViewMO" parentEntity="ImageView" syncable="YES"/>
+    <entity name="Saveable" representedClassName=".SaveableMO" isAbstract="YES" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uploadID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Event" syncable="YES"/>
+        <relationship name="views" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="View" inverseName="saveable" inverseEntity="View" syncable="YES"/>
+    </entity>
+    <entity name="Spin" representedClassName=".SpinMO" parentEntity="Saveable" syncable="YES">
+        <attribute name="defaultHotspots" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Video" representedClassName="VideoMO" parentEntity="Saveable" syncable="YES"/>
+    <entity name="View" representedClassName=".ViewMO" isAbstract="YES" syncable="YES">
+        <relationship name="assets" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Asset" inverseName="view" inverseEntity="Asset" syncable="YES"/>
+        <relationship name="saveable" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Saveable" inverseName="views" inverseEntity="Saveable" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Asset" positionX="-828" positionY="-306" width="128" height="148"/>
+        <element name="CloseupView" positionX="-650" positionY="108" width="128" height="45"/>
+        <element name="Event" positionX="-362" positionY="-84" width="128" height="90"/>
+        <element name="ExteriorView" positionX="-776" positionY="18" width="128" height="58"/>
+        <element name="ImageView" positionX="-506" positionY="27" width="128" height="45"/>
+        <element name="InteriorView" positionX="-362" positionY="108" width="128" height="60"/>
+        <element name="MiscView" positionX="-504" positionY="108" width="128" height="45"/>
+        <element name="Saveable" positionX="-470" positionY="-261" width="128" height="135"/>
+        <element name="Spin" positionX="-290" positionY="-184" width="128" height="58"/>
+        <element name="Video" positionX="-630" positionY="-162" width="128" height="45"/>
+        <element name="View" positionX="-639" positionY="-99" width="128" height="73"/>
+    </elements>
+</model>

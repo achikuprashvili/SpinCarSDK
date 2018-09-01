@@ -14,6 +14,7 @@ public enum SDKError {
     case SPIN_CREATE
     case SPIN_LOAD
     case SPIN_NOT_EXISTS
+    case SPIN_VIN_INVALID
     case SPIN_SAVE
     case SPIN_VIN_DUPLICATE
     case SPIN_REMOVE

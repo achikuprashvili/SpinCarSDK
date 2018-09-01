@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
     s.source_files = "SpinCarSDK/**/*.{h,m,swift}"
 
-    s.dependency 'Alamofire', '~> 4.5.1'
+#  s.dependency 'Alamofire', '~> 4.5.1'
     s.dependency 'Fabric', '~> 1.6.13'
     s.dependency 'Crashlytics', '~> 3.8.6'
     s.dependency 'Mixpanel', '~> 3.2.1'

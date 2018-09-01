@@ -6,7 +6,7 @@
 //
 
 import Foundation
-final class ServiceCustomer{
+open class ServiceCustomer{
     private var id:String!
     private var name:String!
     

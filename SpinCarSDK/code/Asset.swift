@@ -16,49 +16,29 @@ open class Asset{
     
     private let dc = DataController.sharedInstance
     private var type: AssetType = .EXTERIOR
-    private var index: Int!{
-        didSet{
-            assetMo?.index = NSNumber(value: index)
-        }
-    }
-    private var localPath: String!{
-        didSet{
-            assetMo?.filePath = localPath
-        }
-    }
-    private var thumbPath: String!{
-        didSet{
-            assetMo?.thumbnailPath = thumbPath
-        }
-    }
-    private var s3path: String?{
-        didSet{
-            
-        }
-    }
-    private var etag: String!{
-        didSet{
-            assetMo?.etag = etag
-        }
-    }
+    private var index: Int!
+    private var localPath: String!
+    private var thumbPath: String!
+    private var s3path: String?
+    private var etag: String!
     private var mimeType: String!
     private var isvideo: Bool = false
     private var ispanoramic: Bool = false
     private var ishotspot: Bool = false
     private var closeupTag: String!
-    private var assetMo: AssetMO?
-    public init(type: AssetType, localPath: String, thumbPath: String, s3path: String, etag: String, mimeType: String, isVideo: Bool, isPanoramic: Bool, isHotspot:Bool, closeupTag:String) {
-        initAssetMo()
+    internal var assetMo: AssetMO?
+    public init(type: AssetType, localPath: String, thumbPath: String, etag: String, mimeType: String, isVideo: Bool, isPanoramic: Bool, isHotspot:Bool, closeupTag:String = "") {
         self.type = type
         self.localPath = localPath
         self.thumbPath = thumbPath
-        self.s3path = s3path
+//        self.s3path = s3path
         self.etag = etag
         self.mimeType = mimeType
         self.isvideo = isVideo
         self.ispanoramic = isPanoramic
         self.ishotspot = isHotspot
         self.closeupTag = closeupTag
+        initAssetMo()
     }
     private func initAssetMo(){
         guard let asset = self.dc.newEntity(entityName: "Asset") as? AssetMO else {
@@ -66,6 +46,12 @@ open class Asset{
             return
         }
         assetMo = asset
+        assetMo?.filePath = localPath
+        assetMo?.thumbnailPath = thumbPath
+        assetMo?.index = NSNumber(value: index)
+        assetMo?.tag = closeupTag
+        assetMo?.uploaded = 0
+        assetMo?.etag = etag
         
     }
 ////Get
@@ -120,14 +106,17 @@ open class Asset{
     
     public func setIndex(index: Int){
         self.index = index
+        assetMo?.index = NSNumber(value: index)
     }
     
     public func setLocalPath(localPath: String){
         self.localPath = localPath
+        assetMo?.filePath = localPath
     }
     
     public func setThumbPath(thumbPath: String){
         self.thumbPath = thumbPath
+        assetMo?.thumbnailPath = thumbPath
     }
     
     public func setS3path(s3path: String){
@@ -136,6 +125,7 @@ open class Asset{
     
     public func setEtag(etag: String){
         self.etag = etag
+        assetMo?.etag = etag
     }
  
     public func setMimeType(mimeType: String){
@@ -156,6 +146,7 @@ open class Asset{
     
     public func setCloseupTag(closeupTag: String){
         self.closeupTag = closeupTag
+        assetMo?.tag = closeupTag
     }
 }
 

@@ -63,8 +63,8 @@ extension AssetMO {
     
     func fileExists() -> Bool {
         let fileManager = FileManager.default
-        if let fullURL = self.fullURL {
-            return fileManager.fileExists(atPath: fullURL.path!)
+        if let fullURL = self.filePath {
+            return fileManager.fileExists(atPath: NSURL(fileURLWithPath: fullURL).path!)
         }
         return false
     }

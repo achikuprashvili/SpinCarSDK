@@ -9,6 +9,7 @@
 import Foundation
 open class SpinManager{
     private let spinRepository = SpinRepository.shared
+    
     private init() {
       
     }
@@ -38,5 +39,32 @@ open class SpinManager{
         return result
     }
     
+    public func loadSpin(vinStock: String) -> Spin{
+        
+        return Spin(vinStock: "s")
+    }
     
+    public func loadSpins(VinFilter: String) -> [Spin]{
+        return [Spin(vinStock: "s")]
+    }
+    
+    public func removeSpin(vinStock: String, removeMedia: Bool) -> SDKResult{
+        return SDKResult().setError(error: .SPIN_REMOVE)
+    }
+    
+    public func renameSpin(vinStock: String, newVinStock: String) -> SDKResult{
+        return SDKResult().setError(error: .SPIN_RENAME)
+    }
+    
+    public func setSpinCustomerId(vinStock:String, customerId: String) -> Spin{
+        return Spin(vinStock: "s")
+    }
+    
+    public func createAsset(assetType: AssetType, index: Int, mimeType: String, isVideo: Bool, isPanoramic: Bool, isHotspot: Bool, closeupTag: String, mediaPath: String, thumbPath: String) -> Asset{
+        return Asset(type: assetType, localPath: mediaPath, thumbPath: thumbPath, etag: "tag", mimeType: mimeType, isVideo: isVideo, isPanoramic: isPanoramic, isHotspot: isHotspot, closeupTag: closeupTag)
+    }
+    
+    public func uploadSpin(){
+        
+    }
 }
